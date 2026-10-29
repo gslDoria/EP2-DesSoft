@@ -12,5 +12,3 @@ def define_posicoes(linha, coluna, orientacao, tamanho):
             posicoes.append([linha, coluna])    
 
     return posicoes
-
-    
