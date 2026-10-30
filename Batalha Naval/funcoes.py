@@ -77,7 +77,3 @@ def afundados(frota, tabuleiro):
                 quantidade += 1
 
     return quantidade
-
-
-def (tete):
-    return
