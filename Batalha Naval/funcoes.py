@@ -59,3 +59,27 @@ def posiciona_frota(frota):
                 grid[linha][coluna] = 1
 
     return grid
+
+
+
+
+def afundados(frota, tabuleiro):
+    quantidade = 0
+
+    for navio in frota:
+        for embarcacao in frota[navio]:
+            tamanho = 0
+            acertos = 0
+
+            for coordenada in embarcacao:
+                linha = coordenada[0]
+                coluna = coordenada[1]
+
+                tamanho += 1
+                if tabuleiro[linha][coluna] == 'X':
+                    acertos += 1
+
+            if tamanho == acertos:
+                quantidade += 1
+
+    return quantidade
