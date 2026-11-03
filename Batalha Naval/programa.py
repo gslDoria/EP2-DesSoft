@@ -40,6 +40,7 @@ for navio in quantidades:
 
         while valida != True:
             print('Esta posição não está válida!')
+            print (f'Insira as informações referentes ao navio {navio} que possui tamanho {tamanhos[navio]}')
             linha = int(input('linha: '))
             coluna = int(input('coluna: '))
             
