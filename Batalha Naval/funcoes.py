@@ -106,8 +106,8 @@ def monta_tabuleiros(tabuleiro_jogador, tabuleiro_oponente):
     texto += '_______________________________      _______________________________\n'
 
     for linha in range(len(tabuleiro_jogador)):
-        jogador_info = ' '.join([str(item) for item in tabuleiro_jogador[linha]])
-        oponente_info = ' '.join([info if str(info) in 'X-' else '0' for info in tabuleiro_oponente[linha]])
+        jogador_info = '  '.join([str(item) for item in tabuleiro_jogador[linha]])
+        oponente_info = '  '.join([info if str(info) in 'X-' else '0' for info in tabuleiro_oponente[linha]])
         texto += f'{linha}| {jogador_info}|     {linha}| {oponente_info}|\n'
     return texto 
 
